@@ -1,18 +1,13 @@
 /*
-copyright (c) 2008 Wouter van der Graaf, all rights reserved
+css3-mediaqueries.js
 
-css3-mediaqueries.js - CSS Helper and CSS3 Media Queries Enabler
-
-author: Wouter van der Graaf <woutervandergraaf at gmail com>
-version: 0.9 (20091001)
+author: Wouter van der Graaf <woutervandergraaf at gmail com> and Heath Beckett <https://github.com/heathcliff>
 license: MIT
-website: http://woutervandergraaf.nl/css3-mediaqueries-js/
+website: https://github.com/heathcliff/css3-mediaqueries-js
 
 W3C spec: http://www.w3.org/TR/css3-mediaqueries/
 
-Note: use of embedded <style> is not recommended when using media queries, because IE  has no way of returning the raw literal css text from a <style> element.
 */
-
 
 // true prototypal inheritance (http://javascript.crockford.com/prototypal.html)
 if (typeof Object.create !== 'function') {
@@ -991,7 +986,6 @@ domReady(function enableCssMediaQueries() {
         checkForResize();
     };
 }());
-
 
 // bonus: hotfix for IE6 SP1 (bug KB823727)
 try {

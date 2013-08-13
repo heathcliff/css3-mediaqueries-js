@@ -1,13 +1,23 @@
 css3-mediaqueries-js
-====================
+--
 
-css3-mediaqueries.js: makes CSS3 Media Queries work in all browsers
+css3-mediaqueries.js is a JavaScript library that makes CSS3 media queries work in all browsers.
 
-**Author:** Wouter van der Graaf <woutervandergraaf at gmail com>
+**Browser support:** IE 5+, Firefox 1+ and Safari 2. Firefox 3.5+, Opera 7+, Safari 3+ and Chrome already offer native support for CSS3 media queries.
+
+Installation
+--
+
+Include a link to the script somewhere on the page (whether in the `<head>` or before `</body>`)
+
+    <script src="/js/css3-mediaqueries.min.js"></script>
+
+And that's it! Keep in mind that the script will not detect media attributes on `<link>` elements, so it is recommended to use the ``@media`` property within the stylesheets themselves.
+
+
+Acknowledgements + Legal
+--
+
+**Authors:** <a href="https://github.com/woutervandergraaf">Wouter van der Graaf</a> and <a href="https://github.com/heathcliff">Heath Beckett</a>
+
 **License:** MIT
-**Website:** <https://code.google.com/p/css3-mediaqueries-js/>
-**Browser support:** IE 5+, Firefox 1+ and Safari 2.
-
-Firefox 3.5+, Opera 7+, Safari 3+ and Chrome already offer native support.
-
-Adapted from the library by Wouter van der Graaf, css3-mediaqueries-js is a JavaScript library to make IE 5+, Firefox 1+ and Safari 2 transparently parse, test and apply CSS3 Media Queries.
