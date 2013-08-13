@@ -416,9 +416,11 @@ var cssHelper = function () {
         var links = document.getElementsByTagName('link');
         for (var i = 0; i < links.length; i++) {
             var link = links[i];
-            if (link.getAttribute('rel').indexOf('style') > -1 && link.href && link.href.length !== 0 && !link.disabled) {
-                linked[linked.length] = link;
-            }
+            try {
+                if (link.getAttribute('rel').indexOf('style') > -1 && link.href && link.href.length !== 0 && !link.disabled) {
+                    linked[linked.length] = link;
+                }
+            } catch(e) {}
         }
         if (linked.length > 0) {
             var c = 0;
